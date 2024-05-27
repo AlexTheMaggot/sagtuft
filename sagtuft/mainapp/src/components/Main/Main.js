@@ -1,11 +1,24 @@
 import React, {Component} from "react";
 import {Navigate, useParams} from "react-router-dom";
 import './Main.css'
+import Header from "../Header/Header";
+import HeaderEn from "../Header/HeaderEn";
+import HeaderUz from "../Header/HeaderUz";
 import Home from "../Home/Home";
+import HomeEn from "../Home/HomeEn";
+import HomeUz from "../Home/HomeUz";
 import Catalog from "../Catalog/Catalog";
+import CatalogEn from "../Catalog/CatalogEn";
+import CatalogUz from "../Catalog/CatalogUz";
 import About from "../About/About";
+import AboutEn from "../About/AboutEn";
+import AboutUz from "../About/AboutUz";
 import Vacancies from "../Vacancies/Vacancies";
+import VacanciesEn from "../Vacancies/VacanciesEn";
+import VacanciesUz from "../Vacancies/VacanciesUz";
 import Contacts from "../Contacts/Contacts";
+import ContactsEn from "../Contacts/ContactsEn";
+import ContactsUz from "../Contacts/ContactsUz";
 
 export default function Main(props) {
     let params = useParams()
@@ -19,12 +32,14 @@ class MainClass extends Component {
             main_show: false,
             main_content_show: false,
             menu_nav: this.props.level,
+            show_languages: false,
             nav_id: '',
         }
 
     }
 
-    navi = (level, id = undefined) => {
+    navi = (e, level, id = undefined) => {
+        e.preventDefault()
         if (id !== undefined) {
             this.setState({nav_id: id})
         }
@@ -40,6 +55,22 @@ class MainClass extends Component {
             this.setState({main_content_show: true});
         }, 600);
     }
+
+    lang_change = (e, lang) => {
+        e.preventDefault()
+        let new_level = this.props.level.slice(0, -3);
+        if (lang === 'en') {
+            new_level = new_level + '_en';
+        }
+        else if (lang === 'uz') {
+            new_level = new_level + '_uz';
+        }
+        else {
+            new_level = new_level + '_ru';
+        }
+        this.navi(e, new_level)
+    }
+
     componentDidMount() {
         setTimeout(() => {
             this.setState({main_show: true})
@@ -50,47 +81,50 @@ class MainClass extends Component {
     render() {
         return (
             <div className={this.state.main_show ? 'main' : 'main main_hidden'}>
-                <header className="header">
-                    <div className="header__wrap">
-                        <div className="header__left">
-                            <div className="header__left-block"></div>
-                        </div>
-                        <div className="header__center">
-                            <a onClick={() => {this.navi('catalog')}} className="header__link">Каталог</a>
-                            <a onClick={() => {this.navi('about')}} className="header__link">О нас</a>
-                            <a onClick={() => {this.navi('home')}} >
-                                <img className="header__logo-img" src="../../static/img/logo.svg" alt="sagtuft"/>
-                            </a>
-                            <a onClick={() => {this.navi('vacancies')}} className="header__link">Вакансии</a>
-                            <a onClick={() => {this.navi('contacts')}} className="header__link">Контакты</a>
-                        </div>
-                        <div className="header__right">
-                            <div className="header__lang-wrap">
-                                <div className="header__lang-flag"></div>
-                                <svg className="header__lang-arrow" viewBox="0 0 1000 500">
-                                    <polyline points="0,0 1000,0 500,500 "/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </header>
+                {this.props.level.slice(-2) === 'ru' && <Header level={this.props.level} navi={this.navi} lang_change={this.lang_change} />}
+                {this.props.level.slice(-2) === 'en' && <HeaderEn level={this.props.level} navi={this.navi} lang_change={this.lang_change} />}
+                {this.props.level.slice(-2) === 'uz' && <HeaderUz level={this.props.level} navi={this.navi} lang_change={this.lang_change} />}
                 <div className={this.state.main_content_show ? 'main__content' : 'main__content main__content_hidden'}>
-                    {this.state.navigate === 'home' && <Navigate to='/'/>}
-                    {this.state.navigate === 'catalog' && <Navigate to='/catalog/'/>}
-                    {this.state.navigate === 'about' && <Navigate to={'/about/'}/>}
-                    {this.state.navigate === 'vacancies' && <Navigate to='/vacancies/'/>}
-                    {this.state.navigate === 'contacts' && <Navigate to='/contacts/'/>}
-                    {this.props.level === 'home' && <Home />}
-                    {this.props.level === 'catalog' && <Catalog />}
-                    {this.props.level === 'about' && <About />}
-                    {this.props.level === 'vacancies' && <Vacancies />}
-                    {this.props.level === 'contacts' && <Contacts />}
+                    {this.state.navigate === 'home_ru' && <Navigate to='/'/>}
+                    {this.state.navigate === 'home_en' && <Navigate to='/en/'/>}
+                    {this.state.navigate === 'home_uz' && <Navigate to='/uz/'/>}
+                    {this.state.navigate === 'catalog_ru' && <Navigate to='/catalog/'/>}
+                    {this.state.navigate === 'catalog_en' && <Navigate to='/en/catalog/'/>}
+                    {this.state.navigate === 'catalog_uz' && <Navigate to='/uz/catalog/'/>}
+                    {this.state.navigate === 'about_ru' && <Navigate to='/about/'/>}
+                    {this.state.navigate === 'about_en' && <Navigate to='/en/about/'/>}
+                    {this.state.navigate === 'about_uz' && <Navigate to='/uz/about/'/>}
+                    {this.state.navigate === 'vacancies_ru' && <Navigate to='/vacancies/'/>}
+                    {this.state.navigate === 'vacancies_en' && <Navigate to='/en/vacancies/'/>}
+                    {this.state.navigate === 'vacancies_uz' && <Navigate to='/uz/vacancies/'/>}
+                    {this.state.navigate === 'contacts_ru' && <Navigate to='/contacts/'/>}
+                    {this.state.navigate === 'contacts_en' && <Navigate to='/en/contacts/'/>}
+                    {this.state.navigate === 'contacts_uz' && <Navigate to='/uz/contacts/'/>}
+                    {this.props.level === 'home_ru' && <Home />}
+                    {this.props.level === 'home_en' && <HomeEn />}
+                    {this.props.level === 'home_uz' && <HomeUz />}
+                    {this.props.level === 'catalog_ru' && <Catalog />}
+                    {this.props.level === 'catalog_en' && <CatalogEn />}
+                    {this.props.level === 'catalog_uz' && <CatalogUz />}
+                    {this.props.level === 'about_ru' && <About />}
+                    {this.props.level === 'about_en' && <AboutEn />}
+                    {this.props.level === 'about_uz' && <AboutUz />}
+                    {this.props.level === 'vacancies_ru' && <Vacancies />}
+                    {this.props.level === 'vacancies_en' && <VacanciesEn />}
+                    {this.props.level === 'vacancies_uz' && <VacanciesUz />}
+                    {this.props.level === 'contacts_ru' && <Contacts />}
+                    {this.props.level === 'contacts_en' && <ContactsEn />}
+                    {this.props.level === 'contacts_uz' && <ContactsUz />}
                 </div>
                 <footer className={this.state.main_content_show ? 'footer' : 'footer footer_hidden'}>
                     <div className="footer__col">
                         <img className="footer__logo-img" src="../../static/img/logo.svg" alt="sagtuft"/>
                         <div className="footer__menu-block">
-                            <p className="footer__menu-title">Следите за нами</p>
+                            <p className="footer__menu-title">
+                                {this.props.level.slice(-2) === 'ru' && 'Следите за нами'}
+                                {this.props.level.slice(-2) === 'en' && 'Follow us'}
+                                {this.props.level.slice(-2) === 'uz' && 'Ortimizdan yuring'}
+                            </p>
                             <div className="footer__links">
                                 <a href="" className="footer__link">
                                     <svg className="footer__link-img" viewBox="0 0 1000 1000"
@@ -171,11 +205,19 @@ class MainClass extends Component {
                     </div>
                     <div className="footer__col">
                         <div className="footer__menu-block">
-                            <p className="footer__menu-title">Телефонные номера</p>
+                            <p className="footer__menu-title">
+                                {this.props.level.slice(-2) === 'ru' && 'Телефонные номера'}
+                                {this.props.level.slice(-2) === 'en' && 'Phone numbers'}
+                                {this.props.level.slice(-2) === 'uz' && 'Telefon raqamlari'}
+                            </p>
                             <a href="" className="footer__menu-link">+998 (90) 600-00-00</a>
                             <a href="" className="footer__menu-link">+998 (90) 600-00-01</a>
-                            <p className="footer__menu-title">Адрес почты</p>
-                            <a href="" className="footer__menu-link">sagtuft@sag.uz</a>
+                            <p className="footer__menu-title">
+                                {this.props.level.slice(-2) === 'ru' && 'Адрес почты'}
+                                {this.props.level.slice(-2) === 'en' && 'E-mail address'}
+                                {this.props.level.slice(-2) === 'uz' && 'Elektron pochta'}
+                            </p>
+                            <a href="mailto:sagtuft@sag.uz" className="footer__menu-link">sagtuft@sag.uz</a>
                             <p className="footer__copyright">Copyright © SAG 2023. All rights reserved.</p>
                         </div>
                     </div>
