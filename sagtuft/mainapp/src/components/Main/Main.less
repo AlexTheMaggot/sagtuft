@@ -61,11 +61,19 @@
     color: @gray-dark;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__logo-img {
     cursor: pointer;
     height: 80px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &__lang-wrap {
@@ -77,6 +85,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
   }
 
   &__lang-flag {
@@ -90,6 +99,29 @@
   &__lang-arrow {
     height: 7px;
     fill: @gray;
+  }
+
+  &__languages {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -75px;
+    background: @white;
+    border: 1px solid @gray;
+    border-radius: 10px;
+    &_hidden {
+      display: none;
+    }
+  }
+
+  &__language {
+    padding: 10px 50px 10px 10px;
+    border-bottom: 1px solid @gray-light;
+    text-decoration: none;
+    color: @gray;
+    &:hover {
+        color: @blue
+    }
   }
 }
 
@@ -682,13 +714,13 @@
 
   &__menu-title {
     margin-top: 60px;
-    font-size: 2.1rem;
+    font-size: 1.7rem;
     font-weight: 600;
   }
 
   &__menu-link {
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: @gray-dark;
     text-decoration: none;
 
