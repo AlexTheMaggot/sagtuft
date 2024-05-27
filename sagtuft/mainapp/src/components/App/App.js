@@ -15,11 +15,21 @@ export default class App extends Component {
             <div className="app">
                 <BrowserRouter>
                     <Routes>
-                        <Route exact path="/" element={<Main level="home" />}></Route>
-                        <Route exact path="/catalog/" element={<Main level="catalog" />}></Route>
-                        <Route exact path="/about/" element={<Main level="about" />}></Route>
-                        <Route exact path="/vacancies/" element={<Main level="vacancies" />}></Route>
-                        <Route exact path="/contacts/" element={<Main level="contacts" />}></Route>
+                        <Route exact path="/" element={<Main level="home_ru" />}></Route>
+                        <Route exact path="/en/" element={<Main level="home_en" />}></Route>
+                        <Route exact path="/uz/" element={<Main level="home_uz" />}></Route>
+                        <Route exact path="/catalog/" element={<Main level="catalog_ru" />}></Route>
+                        <Route exact path="/en/catalog/" element={<Main level="catalog_en" />}></Route>
+                        <Route exact path="/uz/catalog/" element={<Main level="catalog_uz" />}></Route>
+                        <Route exact path="/about/" element={<Main level="about_ru" />}></Route>
+                        <Route exact path="/en/about/" element={<Main level="about_en" />}></Route>
+                        <Route exact path="/uz/about/" element={<Main level="about_uz" />}></Route>
+                        <Route exact path="/vacancies/" element={<Main level="vacancies_ru" />}></Route>
+                        <Route exact path="/en/vacancies/" element={<Main level="vacancies_en" />}></Route>
+                        <Route exact path="/uz/vacancies/" element={<Main level="vacancies_uz" />}></Route>
+                        <Route exact path="/contacts/" element={<Main level="contacts_ru" />}></Route>
+                        <Route exact path="/en/contacts/" element={<Main level="contacts_en" />}></Route>
+                        <Route exact path="/uz/contacts/" element={<Main level="contacts_uz" />}></Route>
                     </Routes>
                 </BrowserRouter>
             </div>
