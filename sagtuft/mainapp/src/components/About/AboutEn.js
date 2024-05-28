@@ -18,32 +18,32 @@ class AboutClass extends Component {
                 <section className="about">
                     <div className="about__block">
                         <h1 className="about__title">SAG Tuft & Grass</h1>
-                        <p className="about__text">Саг Тафт и трава начали свою карьеру в составе Sam Antep в 2013. Деятельность предприятия
-                            производство брусчатка из ковролина и искусственного дерна для домов и торговых заведений,
-                            искусственный газон для создания ландшафтных композиций и используйте спортивные площадки, а
-                            также дорожки и коврики для ванных комнат, такие как продукция производится на
-                            высокотехнологичном оборудовании использование только экологически чистого сырья и
-                            материалов обеспечивает высокий уровень качества Ковролин и искусственный газон сотканы на
-                            высокотехнологичном бельгийском, немецком и швейцарском оборудовании с использованием только
-                            высококачественного и экологически чистого сырья и материалов, что обеспечивает высокий
-                            уровень качества.качество продукции. В целях обеспечения высоких мировых стандартов качества
-                            на предприятии проводятся См.01.0022.68810861 введена международная система менеджмента
-                            качества. Производственная линия продукции завода постоянно пополняется и уже много лет
-                            успешно сертифицирована и имеет положительные отзывы покупателей как на территории
-                            Республики Узбекистан, так и за рубежом.</p>
+                        <p className="about__text">Sag Taft and grass began their career as part of Sam Antep in 2013. Company activities
+                             production of paving stones from carpet and artificial turf for homes and commercial establishments,
+                             artificial turf to create landscape compositions and use sports grounds, and
+                             also runners and bath mats, such as products produced at
+                             high-tech equipment using only environmentally friendly raw materials and
+                             materials ensures a high level of quality Carpet and artificial turf are woven on
+                             high-tech Belgian, German and Swiss equipment using only
+                             high-quality and environmentally friendly raw materials and supplies, which ensures high
+                             quality level.product quality. In order to ensure high global quality standards
+                             carried out at the enterprise See 01.0022.68810861 an international management system has been introduced
+                             quality. The production line of the plant's products is constantly being replenished and has been for many years
+                             successfully certified and has positive customer reviews both in the territory
+                             of the Republic of Uzbekistan and abroad.</p>
                         <img className="about__img" src="../../../static/img/about-img.webp" alt=""/>
-                        <p className="about__subtitle">Наши преимущества</p>
-                        <p className="about__text">1. Цены на продукцию определяются непосредственно заводом</p>
-                        <p className="about__text">2. Наша продукция производится компанией SAG, которая является лидером по производственным
-                            мощностям в странах СНГ</p>
-                        <p className="about__text">3. Ассортимент, включающий более 100 тысяч видов ковровых изделий, вы можете найти только у
-                            нас (мы уверены, что вы обязательно найдете ковер, подходящий для вашего дома)</p>
-                        <p className="about__text">4. Срок доставки составляет от 1 до 10 дней в зависимости от того, на каком складе находится
-                            выбранный вами товар. И да, кстати, служба доставки в SAG express бесплатна для наших
-                            клиентов</p>
-                        <p className="about__text">5. Вы можете воспользоваться бесплатными консультационными услугами наших профессиональных
-                            специалистов по продажам, чтобы выбрать ковер подходящего дизайна для вашего дома</p>
-                        <p className="about__text">6. Также, для наших клиентов у нас есть услуга оплаты в рассрочку</p>
+                        <p className="about__subtitle">Our advantages</p>
+                        <p className="about__text">1. Product prices are determined directly by the factory</p>
+                        <p className="about__text">2. Our products are manufactured by SAG, which is a leader in manufacturing
+                             capacities in the CIS countries</p>
+                        <p className="about__text">3. An assortment that includes more than 100 thousand types of carpet products can only be found at
+                             us (we are confident that you will definitely find a carpet suitable for your home)</p>
+                        <p className="about__text">4. Delivery time ranges from 1 to 10 days depending on the warehouse
+                             the product you have chosen. And yes, by the way, the delivery service at SAG express is free for our
+                             clients</p>
+                        <p className="about__text">5. You can benefit from free consulting services from our professional
+                             sales specialists to select the right rug design for your home</p>
+                        <p className="about__text">6. Also, for our clients we have an installment payment service</p>
                     </div>
                 </section>
             </main>
