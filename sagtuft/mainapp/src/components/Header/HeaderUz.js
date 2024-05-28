@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {useParams} from "react-router-dom";
-
+import './Header.css'
 export default function HeaderUz(props) {
     let params = useParams()
     return <HeaderClass {...props} params={params}/>
@@ -10,11 +10,7 @@ class HeaderClass extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            main_show: false,
-            main_content_show: false,
-            menu_nav: this.props.level,
             show_languages: false,
-            nav_id: '',
         }
 
     }
@@ -35,13 +31,6 @@ class HeaderClass extends Component {
 
     language_mouse_out = () => {
         this.setState({show_languages: false})
-    }
-
-    componentDidMount() {
-        setTimeout(() => {
-            this.setState({main_show: true})
-            this.setState({main_content_show: true})
-        }, 300);
     }
 
     render() {

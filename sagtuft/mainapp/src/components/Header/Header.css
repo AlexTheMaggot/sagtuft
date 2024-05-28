@@ -1,0 +1,99 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  background: #FFFFFF;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 20px #CCCCCC;
+}
+.header__wrap {
+  display: flex;
+  margin: auto;
+  width: 1040px;
+}
+.header__left {
+  flex: 1 1 auto;
+  height: 120px;
+}
+.header__left-block {
+  width: 70px;
+}
+.header__center {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.header__right {
+  flex: 1 1 auto;
+  height: 120px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header__link:hover {
+  transform: scale(1.1);
+}
+.header__logo-img {
+  cursor: pointer;
+  height: 80px;
+  transition: all 0.3s;
+}
+.header__logo-img:hover {
+  transform: scale(1.05);
+}
+.header__lang-wrap {
+  width: 70px;
+  height: 30px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.header__lang-flag {
+  height: 20px;
+  width: 20px;
+  background: url("../../../static/img/rus.svg") center;
+  background-size: cover;
+  border-radius: 100%;
+}
+.header__lang-arrow {
+  height: 7px;
+  fill: #808080;
+}
+.header__languages {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: -75px;
+  background: #FFFFFF;
+  border: 1px solid #808080;
+  border-radius: 10px;
+}
+.header__languages_hidden {
+  display: none;
+}
+.header__language {
+  padding: 10px 50px 10px 10px;
+  border-bottom: 1px solid #CCCCCC;
+  text-decoration: none;
+  color: #808080;
+}
+.header__language:hover {
+  color: #00509B;
+}
+/*# sourceMappingURL=Header.css.map */

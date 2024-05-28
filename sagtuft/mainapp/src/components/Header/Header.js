@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {useParams} from "react-router-dom";
-
+import './Header.css'
 export default function Header(props) {
     let params = useParams()
     return <HeaderClass {...props} params={params}/>
