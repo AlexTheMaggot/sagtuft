@@ -20,62 +20,62 @@ class HomeClass extends Component {
                     <div className="second-block__features">
                         <div className="second-block__feature second-block__feature_with-line">
                             <p className="second-block__feature-num">01</p>
-                            <p className="second-block__feature-title">Выполнено</p>
-                            <p className="second-block__feature-text">более 100 объектов</p>
-                            <p className="second-block__feature-text">за семь лет</p>
+                            <p className="second-block__feature-title">Bajarildi</p>
+                            <p className="second-block__feature-text">100 dan ortiq ob'ektlar</p>
+                            <p className="second-block__feature-text">etti yil ichida</p>
                         </div>
                         <div className="second-block__feature second-block__feature_with-line">
                             <p className="second-block__feature-num">02</p>
-                            <p className="second-block__feature-title">Бонусы</p>
-                            <p className="second-block__feature-text">на укладку</p>
-                            <p className="second-block__feature-text">и посев газона</p>
+                            <p className="second-block__feature-title">Bonuslar</p>
+                            <p className="second-block__feature-text">o'rnatish uchun</p>
+                            <p className="second-block__feature-text">va maysazor ekish</p>
                         </div>
                         <div className="second-block__feature">
                             <p className="second-block__feature-num">03</p>
-                            <p className="second-block__feature-title">100% Гарантия</p>
-                            <p className="second-block__feature-text">на проживаемость</p>
-                            <p className="second-block__feature-text">и автополив</p>
+                            <p className="second-block__feature-title">100% Kafolat</p>
+                                <p className="second-block__feature-text">turar joy uchun</p>
+                            <p className="second-block__feature-text">va avtomatik sug'orish</p>
                         </div>
                     </div>
                     <div className="search__block">
                         <div className="search">
                             <input className="search__input" type="text"
-                                   placeholder="Поиск по коллекции или дизайну"/>
+                                   placeholder="To'plam yoki dizayn bo'yicha qidiring"/>
                         </div>
-                        <button className="search__button">Найти</button>
+                        <button className="search__button">Toping</button>
                     </div>
-                    <p className="block-title">Зеленый газон можно</p>
-                    <p className="block-title">Использовать по-разному:</p>
+                    <p className="block-title">Yashil maysazor mumkin</p>
+                    <p className="block-title">Turli xil usullarda foydalaning:</p>
                     <div className="second-block__using-wrap">
                         <div className="second-block__using-item">
                             <div className="second-block__using-text-wrap">
-                                <p className="second-block__using-title">Ковролин</p>
-                                <p className="second-block__using-text">Устраивать</p>
-                                <p className="second-block__using-text">на нем пикники</p>
+                                <p className="second-block__using-title">Gilam</p>
+                                <p className="second-block__using-text">Tartibga solish</p>
+                                <p className="second-block__using-text">uning ustida pikniklar bor</p>
                             </div>
                             <img className="second-block__using-img" src="../../static/img/us01.webp" alt=""/>
                         </div>
                         <div className="second-block__using-item">
                             <div className="second-block__using-text-wrap">
-                                <p className="second-block__using-title">Газон</p>
-                                <p className="second-block__using-text">Заниматься</p>
-                                <p className="second-block__using-text">спортом</p>
+                                <p className="second-block__using-title">Maysazor</p>
+                                <p className="second-block__using-text">O'qish</p>
+                                <p className="second-block__using-text">sport</p>
                             </div>
                             <img className="second-block__using-img" src="../../static/img/us02.webp" alt=""/>
                         </div>
                         <div className="second-block__using-item">
                             <div className="second-block__using-text-wrap">
-                                <p className="second-block__using-title">Вельвет</p>
-                                <p className="second-block__using-text">Устраивать</p>
-                                <p className="second-block__using-text">на нем пикники</p>
+                                <p className="second-block__using-title">Velvetin</p>
+                                <p className="second-block__using-text">Tartibga solish</p>
+                                <p className="second-block__using-text">uning ustida pikniklar bor</p>
                             </div>
                             <img className="second-block__using-img" src="../../static/img/us03.webp" alt=""/>
                         </div>
                         <div className="second-block__using-item">
                             <div className="second-block__using-text-wrap">
-                                <p className="second-block__using-title">Нитка</p>
-                                <p className="second-block__using-text">Устраивать</p>
-                                <p className="second-block__using-text">на нем пикники</p>
+                                <p className="second-block__using-title">Ip</p>
+                                <p className="second-block__using-text">Tartibga solish</p>
+                                <p className="second-block__using-text">uning ustida pikniklar bor</p>
                             </div>
                             <img className="second-block__using-img" src="../../static/img/us04.webp" alt=""/>
                         </div>
@@ -83,14 +83,14 @@ class HomeClass extends Component {
                 </section>
                 <section className="bg-block"></section>
                 <section className="third-block">
-                    <p className="block-title">Посмотрите наши кейсы</p>
-                    <p className="third-block__text">Мы имеем опыт реализации проектов от частных участков</p>
-                    <p className="third-block__text">до 7,3 гектар административных участокв</p>
+                    <p className="block-title">Bizning holatlarimizga qarang</p>
+                    <p className="third-block__text">Biz xususiy uchastkalardan loyihalarni amalga oshirishda tajribamiz bor</p>
+                    <p className="third-block__text">7,3 gektargacha maʼmuriy yer</p>
                     <div className="third-block__categories">
-                        <button className="third-block__category">Ковролин</button>
-                        <button className="third-block__category">Газон</button>
-                        <button className="third-block__category">Вельвет</button>
-                        <button className="third-block__category">Нитка</button>
+                        <button className="third-block__category">Gilam</button>
+                        <button className="third-block__category">Maysazor</button>
+                        <button className="third-block__category">Velvetin</button>
+                        <button className="third-block__category">Ip</button>
                     </div>
                     <div className="third-block__products">
                         <div className="third-block__product">
@@ -98,9 +98,9 @@ class HomeClass extends Component {
                             <div className="third-block__product-info">
                                 <p className="third-block__product-hashtag">#TRN</p>
                                 <p className="third-block__product-title">Rubin</p>
-                                <p className="third-block__product-text">Есть 35 моделей</p>
+                                <p className="third-block__product-text">35 ta model mavjud</p>
                                 <div className="third-block__product-button-wrap">
-                                    <button className="third-block__product-button">Подробнее</button>
+                                    <button className="third-block__product-button">Batafsil</button>
                                 </div>
                             </div>
                         </div>
@@ -109,9 +109,9 @@ class HomeClass extends Component {
                             <div className="third-block__product-info">
                                 <p className="third-block__product-hashtag">#TRN</p>
                                 <p className="third-block__product-title">Rubin</p>
-                                <p className="third-block__product-text">Есть 35 моделей</p>
+                                <p className="third-block__product-text">35 ta model mavjud</p>
                                 <div className="third-block__product-button-wrap">
-                                    <button className="third-block__product-button">Подробнее</button>
+                                    <button className="third-block__product-button">Batafsil</button>
                                 </div>
                             </div>
                         </div>
@@ -120,9 +120,9 @@ class HomeClass extends Component {
                             <div className="third-block__product-info">
                                 <p className="third-block__product-hashtag">#TRN</p>
                                 <p className="third-block__product-title">Rubin</p>
-                                <p className="third-block__product-text">Есть 35 моделей</p>
+                                <p className="third-block__product-text">35 ta model mavjud</p>
                                 <div className="third-block__product-button-wrap">
-                                    <button className="third-block__product-button">Подробнее</button>
+                                    <button className="third-block__product-button">Batafsil</button>
                                 </div>
                             </div>
                         </div>
@@ -131,9 +131,9 @@ class HomeClass extends Component {
                             <div className="third-block__product-info">
                                 <p className="third-block__product-hashtag">#TRN</p>
                                 <p className="third-block__product-title">Rubin</p>
-                                <p className="third-block__product-text">Есть 35 моделей</p>
+                                <p className="third-block__product-text">35 ta model mavjud</p>
                                 <div className="third-block__product-button-wrap">
-                                    <button className="third-block__product-button">Подробнее</button>
+                                    <button className="third-block__product-button">Batafsil</button>
                                 </div>
                             </div>
                         </div>
@@ -142,9 +142,9 @@ class HomeClass extends Component {
                             <div className="third-block__product-info">
                                 <p className="third-block__product-hashtag">#TRN</p>
                                 <p className="third-block__product-title">Rubin</p>
-                                <p className="third-block__product-text">Есть 35 моделей</p>
+                                <p className="third-block__product-text">35 ta model mavjud</p>
                                 <div className="third-block__product-button-wrap">
-                                    <button className="third-block__product-button">Подробнее</button>
+                                    <button className="third-block__product-button">Batafsil</button>
                                 </div>
                             </div>
                         </div>
@@ -153,94 +153,94 @@ class HomeClass extends Component {
                             <div className="third-block__product-info">
                                 <p className="third-block__product-hashtag">#TRN</p>
                                 <p className="third-block__product-title">Rubin</p>
-                                <p className="third-block__product-text">Есть 35 моделей</p>
+                                <p className="third-block__product-text">35 ta model mavjud</p>
                                 <div className="third-block__product-button-wrap">
-                                    <button className="third-block__product-button">Подробнее</button>
+                                    <button className="third-block__product-button">Batafsil</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button className="third-block__all-button">Посмотреть все</button>
+                    <button className="third-block__all-button">Hammasini ko'rish</button>
                 </section>
                 <section className="fourth-block">
-                    <p className="block-title">Почему выбирают нас?</p>
+                    <p className="block-title">Nega bizni tanlaysiz?</p>
                     <div className="fourth-block__choose-wrap">
                         <div className="fourth-block__choose-h">
                             <div className="fourth-block__choose-block">
                                 <div className="fourth-block__choose-title-wrap">
-                                    <p className="fourth-block__choose-title">Предоставление</p>
-                                    <p className="fourth-block__choose-title">сертификатов</p>
+                                    <p className="fourth-block__choose-title">Ta'minlash</p>
+                                    <p className="fourth-block__choose-title">sertifikatlar</p>
                                 </div>
-                                <p className="fourth-block__choose-text">На газон, оборудование и</p>
-                                <p className="fourth-block__choose-text">дополнительные материалы</p>
+                                <p className="fourth-block__choose-text">Maysazorda, jihozlar va</p>
+                                <p className="fourth-block__choose-text">Qo'shimcha materiallar</p>
                             </div>
                             <div className="fourth-block__choose-v">
                                 <div className="fourth-block__choose-block">
                                     <div className="fourth-block__choose-title-wrap">
-                                        <p className="fourth-block__choose-title">Доступная</p>
+                                        <p className="fourth-block__choose-title">Mavjud</p>
                                     </div>
-                                    <p className="fourth-block__choose-text">Цена</p>
+                                    <p className="fourth-block__choose-text">Narxi</p>
                                 </div>
                                 <div className="fourth-block__choose-block">
                                     <div className="fourth-block__choose-title-wrap">
-                                        <p className="fourth-block__choose-title">Гарантия</p>
+                                        <p className="fourth-block__choose-title">Kafolat</p>
                                     </div>
-                                    <p className="fourth-block__choose-text">На приживаемость</p>
-                                    <p className="fourth-block__choose-text">и автополив 1 год</p>
+                                    <p className="fourth-block__choose-text">Omon qolish uchun</p>
+                                    <p className="fourth-block__choose-text">va 1 yil davomida avtomatik sug'orish</p>
                                 </div>
                             </div>
                             <div className="fourth-block__choose-block">
                                 <div className="fourth-block__choose-title-wrap">
-                                    <p className="fourth-block__choose-title">Срок</p>
-                                    <p className="fourth-block__choose-title">выполнения работ</p>
+                                    <p className="fourth-block__choose-title">Muddati</p>
+                                    <p className="fourth-block__choose-title">ishning bajarilishi</p>
                                 </div>
-                                <p className="fourth-block__choose-text">1-5 дней в зависимости</p>
-                                <p className="fourth-block__choose-text">от объема работ</p>
+                                <p className="fourth-block__choose-text">1-5 kunga qarab</p>
+                                <p className="fourth-block__choose-text">ish hajmiga qarab</p>
                             </div>
                         </div>
                         <div className="fourth-block__choose-h">
                             <div className="fourth-block__choose-block">
                                 <div className="fourth-block__choose-title-wrap">
-                                    <p className="fourth-block__choose-title">Качественный материал</p>
+                                    <p className="fourth-block__choose-title">Yuqori sifatli material</p>
                                 </div>
-                                <p className="fourth-block__choose-text">Проверенные узбекские</p>
-                                <p className="fourth-block__choose-text">поставщики</p>
+                                <p className="fourth-block__choose-text">Tasdiqlangan o'zbek</p>
+                                <p className="fourth-block__choose-text">yetkazib beruvchilar</p>
                             </div>
                             <div className="fourth-block__choose-block">
                                 <div className="fourth-block__choose-title-wrap">
-                                    <p className="fourth-block__choose-title">Выезд специалиста</p>
+                                    <p className="fourth-block__choose-title">Mutaxassis tashrifi</p>
                                 </div>
-                                <p className="fourth-block__choose-text">На замер объекта -</p>
-                                <p className="fourth-block__choose-text">бесплатно</p>
+                                <p className="fourth-block__choose-text">Ob'ektni o'lchash uchun -</p>
+                                <p className="fourth-block__choose-text">tekinga</p>
                             </div>
                         </div>
                     </div>
-                    <p className="fourth-block__subtitle">Международные проекты по вырыщиванию</p>
-                    <p className="fourth-block__subtitle">растений на гидропонике.</p>
-                    <p>Мы знаем, что такое скорбь, сидим вместе, создаем нашу элиту.</p>
+                    <p className="fourth-block__subtitle">Xalqaro kultivatsiya loyihalari</p>
+                    <p className="fourth-block__subtitle">gidroponik o'simliklar.</p>
+                    <p>Biz qayg'u nimaligini bilamiz, birga o'tiramiz, elitamizni yaratamiz.</p>
                     <img src="../../static/img/map.webp" alt="" className="fourth-block__map"/>
                     <div className="fourth-block__map-blocks">
                         <div className="fourth-block__map-block fourth-block__map-block_with-line">
                             <p className="fourth-block__map-block-title">27+</p>
-                            <p>Стран</p>
+                            <p>Mamlakatlar</p>
                         </div>
                         <div className="fourth-block__map-block fourth-block__map-block_with-line">
                             <p className="fourth-block__map-block-title">2.9M+</p>
-                            <p>Гектары поля</p>
+                            <p>Gektar maydon</p>
                         </div>
                         <div className="fourth-block__map-block fourth-block__map-block_with-line">
                             <p className="fourth-block__map-block-title">87K+</p>
-                            <p>Счастливые клиенты</p>
+                            <p>Baxtli mijozlar</p>
                         </div>
                         <div className="fourth-block__map-block">
                             <p className="fourth-block__map-block-title">15+</p>
-                            <p>Наш опыт</p>
+                            <p>Bizning tajribamiz</p>
                         </div>
                     </div>
                 </section>
                 <section className="fifth-block">
-                    <p className="block-title">Наши эксперты</p>
-                    <p>Наши сотрудники ответят на ваши вопросы</p>
+                    <p className="block-title">Bizning mutaxassislarimiz</p>
+                    <p>Xodimlarimiz savollaringizga javob berishadi</p>
                     <div className="fifth-block__slider">
                         <div className="fifth-block__arrow-wrap">
                             <svg className="fifth-block__arrow-img" viewBox="0 0 1000 1000">
@@ -251,9 +251,9 @@ class HomeClass extends Component {
                         <div className="fifth-block__slider-content">
                             <div className="fifth-block__slide">
                                 <img className="fifth-block__slide-img" src="../../static/img/avatar.webp" alt=""/>
-                                <p className="fifth-block__slide-name">Шавкиддин</p>
-                                <p className="fifth-block__slide-position">Начальник по продаже</p>
-                                <p className="fifth-block__slide-position">экспорта</p>
+                                <p className="fifth-block__slide-name">Shavqiddin</p>
+                                <p className="fifth-block__slide-position">Savdo bo'limi boshlig'i</p>
+                                <p className="fifth-block__slide-position">eksport</p>
                                 <div className="fifth-block__slide-links">
                                     <a href="" className="fifth-block__slide-link">
                                         <svg className="fifth-block__slide-link-img" viewBox="0 0 1000 1000"
@@ -310,9 +310,9 @@ class HomeClass extends Component {
                             </div>
                             <div className="fifth-block__slide">
                                 <img className="fifth-block__slide-img" src="../../static/img/avatar.webp" alt=""/>
-                                <p className="fifth-block__slide-name">Шавкиддин</p>
-                                <p className="fifth-block__slide-position">Начальник по продаже</p>
-                                <p className="fifth-block__slide-position">экспорта</p>
+                                <p className="fifth-block__slide-name">Shavqiddin</p>
+                                <p className="fifth-block__slide-position">Savdo bo'limi boshlig'i</p>
+                                <p className="fifth-block__slide-position">eksport</p>
                                 <div className="fifth-block__slide-links">
                                     <a href="" className="fifth-block__slide-link">
                                         <svg className="fifth-block__slide-link-img" viewBox="0 0 1000 1000"
@@ -369,9 +369,9 @@ class HomeClass extends Component {
                             </div>
                             <div className="fifth-block__slide">
                                 <img className="fifth-block__slide-img" src="../../static/img/avatar.webp" alt=""/>
-                                <p className="fifth-block__slide-name">Шавкиддин</p>
-                                <p className="fifth-block__slide-position">Начальник по продаже</p>
-                                <p className="fifth-block__slide-position">экспорта</p>
+                                <p className="fifth-block__slide-name">Shavqiddin</p>
+                                <p className="fifth-block__slide-position">Savdo bo'limi boshlig'i</p>
+                                <p className="fifth-block__slide-position">eksport</p>
                                 <div className="fifth-block__slide-links">
                                     <a href="" className="fifth-block__slide-link">
                                         <svg className="fifth-block__slide-link-img" viewBox="0 0 1000 1000"
@@ -437,7 +437,7 @@ class HomeClass extends Component {
                             </svg>
                         </div>
                     </div>
-                    <p className="block-title">Наши партнеры</p>
+                    <p className="block-title">Bizning hamkorlarimiz</p>
                     <div className="fifth-block__partners">
                         <img src="../../static/img/SAG.svg" alt="" className="fifth-block__partner"/>
                         <img src="../../static/img/SET.svg" alt="" className="fifth-block__partner"/>
@@ -454,38 +454,36 @@ class HomeClass extends Component {
                     </div>
                 </section>
                 <section className="sixth-block">
-                    <h1 className="sixth-block__title">Не решили какой именно</h1>
-                    <h1 className="sixth-block__title">газон вам подойдет?</h1>
+                    <h1 className="sixth-block__title">Qaysi biri ekanligini aniq hal qilmadim</h1>
+                    <h1 className="sixth-block__title">Maysazor sizga mosmi?</h1>
                     <div className="sixth-block__subtitle">
-                        <p className="sixth-block__text">Оставльте заявку и мы свяжемся с вами</p>
-                        <p className="sixth-block__text">для подбора идеального решения</p>
+                        <p className="sixth-block__text">So'rov qoldiring va biz siz bilan bog'lanamiz</p>
+                        <p className="sixth-block__text">ideal yechim topish uchun</p>
                     </div>
                     <form className="sixth-block__form" action="">
-                        <input className="sixth-block__input" type="text" placeholder="Ваше имя:"/>
-                        <input className="sixth-block__input" type="number" placeholder="Ваш номер телефона:"/>
-                        <input className="sixth-block__submit" type="submit" value="Оставить заявку"/>
+                        <input className="sixth-block__input" type="text" placeholder="Sizning ismingiz:"/>
+                        <input className="sixth-block__input" type="number" placeholder="Sizning telefon raqamingiz:"/>
+                        <input className="sixth-block__submit" type="submit" value="Arizangizni yuboring"/>
                     </form>
-                    <p className="sixth-block__text">*Итоговая стоимость озеленения объекта зависит от его
-                        площади,</p>
-                    <p className="sixth-block__text">текущих условий на участке и сложности подготовительных
-                        работ.</p>
+                    <p className="sixth-block__text">*Obyektni obodonlashtirishning yakuniy qiymati unga bog'liq kvadratlar,</p>
+                    <p className="sixth-block__text">saytdagi hozirgi sharoitlar va tayyorgarlik ishlarining murakkabligi.</p>
                 </section>
                 <section className="seventh-block">
                     <div className="seventh-block__wrap">
                         <div className="seventh-block__left-side">
                             <div className="seventh-block__contact-wrap">
-                                <p className="seventh-block__contact-title">Контакты</p>
+                                <p className="seventh-block__contact-title">Kontaktlar</p>
                                 <p className="seventh-block__contact-text">+998 (90) 600-00-00</p>
                                 <p className="seventh-block__contact-text">+998 (90) 600-00-01</p>
                             </div>
                             <div className="seventh-block__contact-wrap">
-                                <p className="seventh-block__contact-title">Адрес</p>
-                                <p className="seventh-block__contact-text">Узбекистан, Самарканд</p>
-                                <p className="seventh-block__contact-text">Спитаменшох 270</p>
+                                <p className="seventh-block__contact-title">Manzil</p>
+                                <p className="seventh-block__contact-text">O'zbekiston, Samarqand</p>
+                                <p className="seventh-block__contact-text">Spitamenshox ko'chasi 270</p>
                             </div>
                             <div className="seventh-block__contact-wrap">
-                                <p className="seventh-block__contact-title">Время работы</p>
-                                <p className="seventh-block__contact-text">Пн - Сб</p>
+                                <p className="seventh-block__contact-title">Ish vaqti</p>
+                                <p className="seventh-block__contact-text">Du - Sh</p>
                                 <p className="seventh-block__contact-text">09:00 - 18:00</p>
                             </div>
                         </div>
@@ -495,15 +493,14 @@ class HomeClass extends Component {
                                     width="767" height="565" frameBorder="0"></iframe>
                         </div>
                     </div>
-                    <div className="seventh-block__blog-title">Блог</div>
+                    <div className="seventh-block__blog-title">Blog</div>
                     <div className="post__wrapper">
                         <a href="" className="post">
                             <img alt="" src="../../static/img/0001-min.webp" className="post__img"/>
                             <div className="post__content">
                                 <div>
-                                    <p className="post__title">Как насчет ковров SAG в детской комнате?</p>
-                                    <p>Мы уверены, что ковры Zilli, Bambino, Baby, Bali станут одним из лучших
-                                        предложений для...</p>
+                                    <p className="post__title">Bolalar xonasida SAG gilamlari haqida nima deyish mumkin?</p>
+                                    <p>Ishonchimiz komilki, Zilli, Bambino, Baby, Bali gilamlari eng yaxshi takliflardan biri bo'ladi...</p>
                                 </div>
                                 <div className="post__date-wrap">
                                     <svg className="post__date-img" viewBox="0 0 1000 1000">
@@ -544,9 +541,8 @@ class HomeClass extends Component {
                             <img alt="" src="../../static/img/0002-min.webp" className="post__img"/>
                             <div className="post__content">
                                 <div>
-                                    <p className="post__title">Как насчет ковров SAG в детской комнате?</p>
-                                    <p>Мы уверены, что ковры Zilli, Bambino, Baby, Bali станут одним из лучших
-                                        предложений для...</p>
+                                    <p className="post__title">Bolalar xonasida SAG gilamlari haqida nima deyish mumkin?</p>
+                                    <p>Ishonchimiz komilki, Zilli, Bambino, Baby, Bali gilamlari eng yaxshi takliflardan biri bo'ladi...</p>
                                 </div>
                                 <div className="post__date-wrap">
                                     <svg className="post__date-img" viewBox="0 0 1000 1000">
@@ -584,7 +580,7 @@ class HomeClass extends Component {
                             </div>
                         </a>
                     </div>
-                    <a href="" className="seventh-block__view-all">Посмотреть все</a>
+                    <a href="" className="seventh-block__view-all">Hammasini ko'rish</a>
                 </section>
             </main>
         );
