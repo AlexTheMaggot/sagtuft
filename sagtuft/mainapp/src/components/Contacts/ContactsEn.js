@@ -18,7 +18,7 @@ class ContactsClass extends Component {
             <main>
                 <section className="contacts">
                     <div className="contacts__block">
-                        <p className="contacts__title">Наши адреса на карте</p>
+                        <p className="contacts__title">Our addresses on the map</p>
                         <iframe
                             src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac0675216cbf366ecf5478de3743ece551040f898fb2a64c35ae9f12c5928f832&amp;source=constructor"
                             width="1040" height="600"></iframe>
@@ -26,24 +26,24 @@ class ContactsClass extends Component {
                             <div className="contacts__item contact">
                                 <img src="../../static/img/ci01.webp" alt="" className="contact__img"/>
                                 <div className="contact__texts">
-                                    <p className="contact__title">Самаркандская область</p>
-                                    <p className="contact__text">Все магазины: 1</p>
+                                    <p className="contact__title">Samarkand region</p>
+                                    <p className="contact__text">All stores: 1</p>
                                 </div>
                                 <img src="../../static/img/arrow.svg" className="contact__arrow"/>
                             </div>
                             <div className="contacts__item contact">
                                 <img src="../../static/img/ci01.webp" alt="" className="contact__img"/>
                                 <div className="contact__texts">
-                                    <p className="contact__title">Самаркандская область</p>
-                                    <p className="contact__text">Все магазины: 1</p>
+                                    <p className="contact__title">Samarkand region</p>
+                                    <p className="contact__text">All stores: 1</p>
                                 </div>
                                 <img src="../../static/img/arrow.svg" className="contact__arrow"/>
                             </div>
                             <div className="contacts__item contact">
                                 <img src="../../static/img/ci01.webp" alt="" className="contact__img"/>
                                 <div className="contact__texts">
-                                    <p className="contact__title">Самаркандская область</p>
-                                    <p className="contact__text">Все магазины: 1</p>
+                                    <p className="contact__title">Samarkand region</p>
+                                    <p className="contact__text">All stores: 1</p>
                                 </div>
                                 <img src="../../static/img/arrow.svg" className="contact__arrow"/>
                             </div>
