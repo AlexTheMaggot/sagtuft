@@ -71,10 +71,14 @@ class MainClass extends Component {
         else {
             new_level = new_level + '_ru';
         }
+        let htmltag = document.getElementsByTagName('html')[0];
+        htmltag.setAttribute('lang', lang);
         this.navi(e, new_level)
     }
 
     componentDidMount() {
+        let htmltag = document.getElementsByTagName('html')[0];
+        htmltag.setAttribute('lang', this.props.level.slice(-2));
         setTimeout(() => {
             this.setState({main_show: true})
             this.setState({main_content_show: true})
