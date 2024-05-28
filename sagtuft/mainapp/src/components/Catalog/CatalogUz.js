@@ -18,23 +18,23 @@ class CatalogClass extends Component {
                 <section className="catalog">
                     <div className="search__block">
                         <div className="search">
-                            <input className="search__input" type="text" placeholder="Поиск по коллекции или дизайну"/>
+                            <input className="search__input" type="text" placeholder="To'plam yoki dizayn bo'yicha qidiring"/>
                         </div>
-                        <button className="search__button">Найти</button>
+                        <button className="search__button">Toping</button>
                     </div>
                     <div className="breadcrumbs">
-                        <a className="breadcrumbs__link" href="index.html">Главная</a>
+                        <a className="breadcrumbs__link" href="index.html">Uy</a>
                         <p className="breadcrumbs__text">/</p>
-                        <p className="breadcrumbs__text">Каталог</p>
+                        <p className="breadcrumbs__text">Katalog</p>
                     </div>
                     <div className="post__wrapper">
                         <a href="tufting_covers.html" className="post">
                             <img alt="" src="../../static/img/c01.webp" className="post__img"/>
                             <div className="post__content">
                                 <div>
-                                    <p className="post__title">Тафтиновые покрытия</p>
-                                    <p>Оптимальное по соотношению стоимости и качества тафтинговый ковролин пользуется
-                                        стабильно высоким спросом благодаря ряду преимуществ</p>
+                                    <p className="post__title">Tuftli qoplamalar</p>
+                                    <p>Tufted gilamning narxi va sifatining optimal nisbati qo'llaniladi
+                                         qator afzalliklari tufayli doimiy ravishda yuqori talab</p>
                                 </div>
                             </div>
                         </a>
@@ -42,9 +42,9 @@ class CatalogClass extends Component {
                             <img alt="" src="../../static/img/c02.webp" className="post__img"/>
                             <div className="post__content">
                                 <div>
-                                    <p className="post__title">Искусственный Газон</p>
-                                    <p>Оптимальное по соотношению стоимости и качества тафтинговый ковролин пользуется
-                                        стабильно высоким спросом благодаря ряду преимуществ</p>
+                                    <p className="post__title">Sun'iy maysazor</p>
+                                    <p>Tufted gilamning narxi va sifatining optimal nisbati qo'llaniladi
+                                         qator afzalliklari tufayli doimiy ravishda yuqori talab</p>
                                 </div>
                             </div>
                         </a>
@@ -52,9 +52,9 @@ class CatalogClass extends Component {
                             <img alt="" src="../../static/img/c03.webp" className="post__img"/>
                             <div className="post__content">
                                 <div>
-                                    <p className="post__title">Вельвет</p>
-                                    <p>Оптимальное по соотношению стоимости и качества тафтинговый ковролин пользуется
-                                        стабильно высоким спросом благодаря ряду преимуществ</p>
+                                    <p className="post__title">Velvetin</p>
+                                    <p>Tufted gilamning narxi va sifatining optimal nisbati qo'llaniladi
+                                         qator afzalliklari tufayli doimiy ravishda yuqori talab</p>
                                 </div>
                             </div>
                         </a>
@@ -62,9 +62,9 @@ class CatalogClass extends Component {
                             <img alt="" src="../../static/img/c04.webp" className="post__img"/>
                             <div className="post__content">
                                 <div>
-                                    <p className="post__title">Нитка</p>
-                                    <p>Оптимальное по соотношению стоимости и качества тафтинговый ковролин пользуется
-                                        стабильно высоким спросом благодаря ряду преимуществ</p>
+                                    <p className="post__title">Ip</p>
+                                    <p>Tufted gilamning narxi va sifatining optimal nisbati qo'llaniladi
+                                         qator afzalliklari tufayli doimiy ravishda yuqori talab</p>
                                 </div>
                             </div>
                         </a>
