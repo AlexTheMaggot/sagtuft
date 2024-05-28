@@ -18,32 +18,32 @@ class AboutClass extends Component {
                 <section className="about">
                     <div className="about__block">
                         <h1 className="about__title">SAG Tuft & Grass</h1>
-                        <p className="about__text">Саг Тафт и трава начали свою карьеру в составе Sam Antep в 2013. Деятельность предприятия
-                            производство брусчатка из ковролина и искусственного дерна для домов и торговых заведений,
-                            искусственный газон для создания ландшафтных композиций и используйте спортивные площадки, а
-                            также дорожки и коврики для ванных комнат, такие как продукция производится на
-                            высокотехнологичном оборудовании использование только экологически чистого сырья и
-                            материалов обеспечивает высокий уровень качества Ковролин и искусственный газон сотканы на
-                            высокотехнологичном бельгийском, немецком и швейцарском оборудовании с использованием только
-                            высококачественного и экологически чистого сырья и материалов, что обеспечивает высокий
-                            уровень качества.качество продукции. В целях обеспечения высоких мировых стандартов качества
-                            на предприятии проводятся См.01.0022.68810861 введена международная система менеджмента
-                            качества. Производственная линия продукции завода постоянно пополняется и уже много лет
-                            успешно сертифицирована и имеет положительные отзывы покупателей как на территории
-                            Республики Узбекистан, так и за рубежом.</p>
+                        <p className="about__text">Sag Taft va o't o'z faoliyatini 2013 yilda Sam Antepning bir qismi sifatida boshlagan. Kompaniya faoliyati
+                             uy-joylar va savdo ob'ektlari uchun gilam va sun'iy qoplamadan yulka toshlarini ishlab chiqarish;
+                             peyzaj kompozitsiyalarini yaratish va sport maydonchalaridan foydalanish uchun sun'iy çim, va
+                             da ishlab chiqarilgan mahsulotlar kabi yuguruvchilar va hammom paspaslar ham
+                             faqat ekologik toza xom ashyolardan foydalangan holda yuqori texnologiyali uskunalar va
+                             materiallar yuqori sifat darajasini ta'minlaydi Gilam va sun'iy çim to'qiladi
+                             faqat yuqori texnologiyali Belgiya, Germaniya va Shveytsariya uskunalari yordamida
+                             yuqori sifatli va ekologik toza xom ashyo va materiallar, bu esa yuqoriligini ta'minlaydi
+                             sifat darajasi.mahsulot sifati. Yuqori global sifat standartlarini ta'minlash uchun
+                             korxonada amalga oshirildi Qarang: 01.0022.68810861 xalqaro boshqaruv tizimi joriy etildi
+                             sifat. Zavod mahsulotlari ishlab chiqarish liniyasi doimiy ravishda to'ldirilib boriladi va ko'p yillar davomida mavjud
+                             muvaffaqiyatli sertifikatlangan va har ikkala hududda mijozlarning ijobiy sharhlariga ega
+                             O‘zbekiston Respublikasi va xorijda.</p>
                         <img className="about__img" src="../../../static/img/about-img.webp" alt=""/>
-                        <p className="about__subtitle">Наши преимущества</p>
-                        <p className="about__text">1. Цены на продукцию определяются непосредственно заводом</p>
-                        <p className="about__text">2. Наша продукция производится компанией SAG, которая является лидером по производственным
-                            мощностям в странах СНГ</p>
-                        <p className="about__text">3. Ассортимент, включающий более 100 тысяч видов ковровых изделий, вы можете найти только у
-                            нас (мы уверены, что вы обязательно найдете ковер, подходящий для вашего дома)</p>
-                        <p className="about__text">4. Срок доставки составляет от 1 до 10 дней в зависимости от того, на каком складе находится
-                            выбранный вами товар. И да, кстати, служба доставки в SAG express бесплатна для наших
-                            клиентов</p>
-                        <p className="about__text">5. Вы можете воспользоваться бесплатными консультационными услугами наших профессиональных
-                            специалистов по продажам, чтобы выбрать ковер подходящего дизайна для вашего дома</p>
-                        <p className="about__text">6. Также, для наших клиентов у нас есть услуга оплаты в рассрочку</p>
+                        <p className="about__subtitle">Bizning afzalliklarimiz</p>
+                        <p className="about__text">1. Mahsulot narxlari bevosita zavod tomonidan belgilanadi</p>
+                        <p className="about__text">2. Mahsulotlarimiz ishlab chiqarishda etakchi bo'lgan SAG tomonidan ishlab chiqariladi
+                             MDH mamlakatlaridagi quvvatlar</p>
+                        <p className="about__text">3. Gilam mahsulotlarining 100 mingdan ortiq turlarini o'z ichiga olgan assortimentni faqat quyidagi manzilda topish mumkin
+                             biz (uyingizga mos gilamni albatta topishingizga ishonamiz)</p>
+                        <p className="about__text">4. Yetkazib berish muddati omborga qarab 1 kundan 10 kungacha
+                             siz tanlagan mahsulot. Ha, aytmoqchi, SAG expressda yetkazib berish xizmati biz uchun bepul
+                             mijozlar</p>
+                        <p className="about__text">5. Professionalimizdan bepul maslahat xizmatlaridan foydalanishingiz mumkin
+                             uyingiz uchun to'g'ri gilam dizaynini tanlash uchun savdo bo'yicha mutaxassislar</p>
+                        <p className="about__text">6. Shuningdek, mijozlarimiz uchun bo‘lib-bo‘lib to‘lov xizmati mavjud</p>
                     </div>
                 </section>
             </main>
