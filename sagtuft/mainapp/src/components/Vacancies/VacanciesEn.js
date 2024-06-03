@@ -18,11 +18,11 @@ class VacanciesClass extends Component {
                 <section className="vacancies">
                     <div className="vacancies__block">
                         <img src="../../../static/img/vacancies-img.webp" alt="" className="vacancies__img"/>
-                        <p className="vacancies__text">Доступные вакансии</p>
-                        <p className="vacancies__text">Мы рады сотрудничать с настоящими профессионалами!</p>
-                        <p className="vacancies__text">Уважаемый кандидат! Размер оклада, а так же иные дополнительные условия обсуждаются непосредственно на собеседовании.</p>
-                        <button className="vacancies__button">Заполнить анкету</button>
-                        <button className="vacancies__button">Оставить резюме</button>
+                        <p className="vacancies__text">Available vacancies</p>
+                        <p className="vacancies__text">We are glad to cooperate with real professionals!</p>
+                        <p className="vacancies__text">Dear candidate! The salary amount, as well as other additional conditions, are discussed directly at the interview.</p>
+                        <button className="vacancies__button">Fill out the form</button>
+                        <button className="vacancies__button">Leave your resume</button>
                     </div>
                 </section>
             </main>
