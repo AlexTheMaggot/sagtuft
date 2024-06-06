@@ -110,9 +110,9 @@ class MainClass extends Component {
                     {this.props.level === 'home_ru' && <Home />}
                     {this.props.level === 'home_en' && <HomeEn />}
                     {this.props.level === 'home_uz' && <HomeUz />}
-                    {this.props.level === 'catalog_ru' && <Catalog />}
-                    {this.props.level === 'catalog_en' && <CatalogEn />}
-                    {this.props.level === 'catalog_uz' && <CatalogUz />}
+                    {this.props.level === 'catalog_ru' && <Catalog navi={this.navi} />}
+                    {this.props.level === 'catalog_en' && <CatalogEn navi={this.navi} />}
+                    {this.props.level === 'catalog_uz' && <CatalogUz navi={this.navi} />}
                     {this.props.level === 'about_ru' && <About />}
                     {this.props.level === 'about_en' && <AboutEn />}
                     {this.props.level === 'about_uz' && <AboutUz />}
