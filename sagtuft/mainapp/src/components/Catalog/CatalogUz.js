@@ -16,9 +16,14 @@ class CatalogClass extends Component {
         }
     }
 
+    navi = (e, level, id = undefined ) => {
+        e.preventDefault()
+        this.props.navi(e, level, id)
+    }
+
 
     componentDidMount() {
-        let categories = api_sender('CategoryGetList', 1)
+        let categories = api_sender('CategoryGetList', 3)
         categories.then((response) => {
             this.setState({categories: response.result})
         })
@@ -35,7 +40,7 @@ class CatalogClass extends Component {
                         <button className="search__button">Toping</button>
                     </div>
                     <div className="breadcrumbs">
-                        <a className="breadcrumbs__link" href="index.html">Uy</a>
+                        <a className="breadcrumbs__link" href="/uz/" onClick={(e) => {this.navi(e, 'home_uz')}}>Uy</a>
                         <p className="breadcrumbs__text">/</p>
                         <p className="breadcrumbs__text">Katalog</p>
                     </div>
