@@ -106,4 +106,7 @@
 .header__language:hover {
   color: #00509B;
 }
+.header__language_active {
+  color: #00509B;
+}
 /*# sourceMappingURL=Header.css.map */
