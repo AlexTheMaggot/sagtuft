@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {useParams} from "react-router-dom";
 import './Catalog.css'
+import api_sender from "../api_sender";
 
 export default function CatalogUz(props) {
     let params = useParams()
@@ -10,6 +11,17 @@ export default function CatalogUz(props) {
 class CatalogClass extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            categories: [],
+        }
+    }
+
+
+    componentDidMount() {
+        let categories = api_sender('CategoryGetList', 1)
+        categories.then((response) => {
+            this.setState({categories: response.result})
+        })
     }
 
     render() {
@@ -28,46 +40,17 @@ class CatalogClass extends Component {
                         <p className="breadcrumbs__text">Katalog</p>
                     </div>
                     <div className="post__wrapper">
-                        <a href="tufting_covers.html" className="post">
-                            <img alt="" src="../../static/img/c01.webp" className="post__img"/>
-                            <div className="post__content">
-                                <div>
-                                    <p className="post__title">Tuftli qoplamalar</p>
-                                    <p>Tufted gilamning narxi va sifatining optimal nisbati qo'llaniladi
-                                         qator afzalliklari tufayli doimiy ravishda yuqori talab</p>
+                        {this.state.categories.map(c => (
+                            <a key={c.id} href="tufting_covers.html" className="post">
+                                <img alt="" src={c.img} className="post__img"/>
+                                <div className="post__content">
+                                    <div>
+                                        <p className="post__title">{c.name_uz}</p>
+                                        <p>{c.description_uz}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="artificial_turf.html" className="post">
-                            <img alt="" src="../../static/img/c02.webp" className="post__img"/>
-                            <div className="post__content">
-                                <div>
-                                    <p className="post__title">Sun'iy maysazor</p>
-                                    <p>Tufted gilamning narxi va sifatining optimal nisbati qo'llaniladi
-                                         qator afzalliklari tufayli doimiy ravishda yuqori talab</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="tufting_covers.html" className="post">
-                            <img alt="" src="../../static/img/c03.webp" className="post__img"/>
-                            <div className="post__content">
-                                <div>
-                                    <p className="post__title">Velvetin</p>
-                                    <p>Tufted gilamning narxi va sifatining optimal nisbati qo'llaniladi
-                                         qator afzalliklari tufayli doimiy ravishda yuqori talab</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="tufting_covers.html" className="post">
-                            <img alt="" src="../../static/img/c04.webp" className="post__img"/>
-                            <div className="post__content">
-                                <div>
-                                    <p className="post__title">Ip</p>
-                                    <p>Tufted gilamning narxi va sifatining optimal nisbati qo'llaniladi
-                                         qator afzalliklari tufayli doimiy ravishda yuqori talab</p>
-                                </div>
-                            </div>
-                        </a>
+                            </a>
+                        ))}
                     </div>
                 </section>
             </main>
