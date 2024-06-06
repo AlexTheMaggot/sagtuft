@@ -67,9 +67,19 @@
 .header__lang-flag {
   height: 20px;
   width: 20px;
+  border-radius: 100%;
+}
+.header__lang-flag_ru {
   background: url("../../../static/img/rus.svg") center;
   background-size: cover;
-  border-radius: 100%;
+}
+.header__lang-flag_en {
+  background: url("../../../static/img/usa.svg") center;
+  background-size: cover;
+}
+.header__lang-flag_uz {
+  background: url("../../../static/img/uzb.svg") center;
+  background-size: cover;
 }
 .header__lang-arrow {
   height: 7px;
