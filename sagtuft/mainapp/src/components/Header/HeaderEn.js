@@ -51,7 +51,7 @@ class HeaderClass extends Component {
                     </div>
                     <div className="header__right">
                         <div className="header__lang-wrap" onMouseEnter={() => this.language_mouse_in()}>
-                            <div className={'header__lang-flag header__lang-flag_' + this.props.level.slice(-2)}></div>
+                            <div className='header__lang-flag header__lang-flag_en'></div>
                             <svg className="header__lang-arrow" viewBox="0 0 1000 500">
                                 <polyline points="0,0 1000,0 500,500 "/>
                             </svg>
@@ -60,7 +60,7 @@ class HeaderClass extends Component {
                             className={this.state.show_languages ? 'header__languages' : 'header__languages header__languages_hidden'} onMouseLeave={() => this.language_mouse_out()}>
                             <a href="" onClick={(event) => {this.lang_change(event, 'uz')}} className="header__language">O'zbekcha</a>
                             <a href="" onClick={(event) => {this.lang_change(event, 'ru')}} className="header__language">Русский</a>
-                            <a href="" onClick={(event) => {this.lang_change(event, 'en')}} className="header__language">English</a>
+                            <a href="" onClick={(event) => {this.lang_change(event, 'en')}} className="header__language header__language_active">English</a>
                         </div>
                     </div>
                 </div>
