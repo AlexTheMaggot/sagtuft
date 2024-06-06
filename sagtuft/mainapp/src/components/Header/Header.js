@@ -51,7 +51,7 @@ class HeaderClass extends Component {
                     </div>
                     <div className="header__right">
                         <div className="header__lang-wrap" onMouseEnter={() => this.language_mouse_in()}>
-                            <div className="header__lang-flag"></div>
+                            <div className={'header__lang-flag header__lang-flag_' + this.props.level.slice(-2)}></div>
                             <svg className="header__lang-arrow" viewBox="0 0 1000 500">
                                 <polyline points="0,0 1000,0 500,500 "/>
                             </svg>
