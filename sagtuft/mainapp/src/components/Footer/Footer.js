@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {useParams} from "react-router-dom";
 import './Footer.css'
+import api_sender from "../api_sender";
 
 export default function Footer(props) {
     let params = useParams()
@@ -10,11 +11,21 @@ export default function Footer(props) {
 class FooterClass extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            categories: [],
+        }
     }
 
     navi = (e, level, id = undefined ) => {
         e.preventDefault()
         this.props.navi(e, level, id)
+    }
+
+    componentDidMount() {
+        let categories = api_sender('CategoryGetList', 4)
+        categories.then((response) => {
+            this.setState({categories: response.result})
+        })
     }
 
     render() {
@@ -127,10 +138,9 @@ class FooterClass extends Component {
                 <div className="footer__col">
                     <div className="footer__menu-block">
                         <p className="footer__menu-title">Каталог</p>
-                        <a href="" className="footer__menu-link">Ковролин</a>
-                        <a href="" className="footer__menu-link">Искусственный газон</a>
-                        <a href="" className="footer__menu-link">Вельвет</a>
-                        <a href="" className="footer__menu-link">Нитка</a>
+                        {this.state.categories.map((c) => (
+                            <a key={c.id} href="" className="footer__menu-link">{c.name_ru}</a>
+                        ))}
                     </div>
                 </div>
             </footer>
