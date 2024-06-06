@@ -58,8 +58,8 @@ class HeaderClass extends Component {
                         </div>
                         <div
                             className={this.state.show_languages ? 'header__languages' : 'header__languages header__languages_hidden'} onMouseLeave={() => this.language_mouse_out()}>
-                            <a href="" onClick={(event) => {this.lang_change(event, 'uz')}} className="header__language">O'zbekcha</a>
-                            <a href="" onClick={(event) => {this.lang_change(event, 'ru')}} className="header__language">Русский</a>
+                            <a href={'/uz' + window.location.pathname.slice(3)} onClick={(event) => {this.lang_change(event, 'uz')}} className="header__language">O'zbekcha</a>
+                            <a href={window.location.pathname.slice(3)} onClick={(event) => {this.lang_change(event, 'ru')}} className="header__language">Русский</a>
                             <a href="" onClick={(event) => {this.lang_change(event, 'en')}} className="header__language header__language_active">English</a>
                         </div>
                     </div>
