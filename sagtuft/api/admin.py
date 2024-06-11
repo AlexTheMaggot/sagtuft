@@ -2,4 +2,8 @@ from django.contrib import admin
 from .models import *
 
 
-admin.site.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('name_en',)}
+
+
+admin.site.register(Category, CategoryAdmin)
