@@ -9,6 +9,7 @@ class Category(models.Model):
     description_ru = models.TextField(verbose_name='Описание на русском')
     description_en = models.TextField(verbose_name='Описание на английском')
     description_uz = models.TextField(verbose_name='Описание на узбекском')
+    slug = models.SlugField(verbose_name='URL', unique=True, db_index=True, max_length=100)
 
     def __str__(self):
         return self.name_ru
