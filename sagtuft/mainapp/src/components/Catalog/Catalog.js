@@ -46,7 +46,7 @@ class CatalogClass extends Component {
                     </div>
                     <div className="post__wrapper">
                         {this.state.categories.map(c => (
-                            <a key={c.id} href="tufting_covers.html" className="post">
+                            <a key={c.id} href={'/catalog/' + c.slug + '/'} className="post">
                                 <img alt="" src={c.img} className="post__img"/>
                                 <div className="post__content">
                                     <div>
