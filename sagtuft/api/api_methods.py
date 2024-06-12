@@ -38,6 +38,7 @@ def category_list(request, request_data):
             'description_en': c.description_en,
             'description_uz': c.description_uz,
             'img': c.img.url,
+            'slug': c.slug,
         }
         response.append(resp_t)
     return make_success(request_data['id'], response)
