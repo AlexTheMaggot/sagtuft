@@ -21,6 +21,9 @@ export default class App extends Component {
                         <Route exact path="/catalog/" element={<Main level="catalog_ru" />}></Route>
                         <Route exact path="/en/catalog/" element={<Main level="catalog_en" />}></Route>
                         <Route exact path="/uz/catalog/" element={<Main level="catalog_uz" />}></Route>
+                        <Route exact path="/catalog/:category_slug/" element={<Main level="category_detail_ru" />}></Route>
+                        <Route exact path="/en/catalog/:category_slug/" element={<Main level="category_detail_en" />}></Route>
+                        <Route exact path="/uz/catalog/:category_slug/" element={<Main level="category_detail_uz" />}></Route>
                         <Route exact path="/about/" element={<Main level="about_ru" />}></Route>
                         <Route exact path="/en/about/" element={<Main level="about_en" />}></Route>
                         <Route exact path="/uz/about/" element={<Main level="about_uz" />}></Route>
