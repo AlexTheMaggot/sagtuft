@@ -44,7 +44,7 @@ class HeaderClass extends Component {
                         <a href={this.props.level.slice(-2) === 'ru' ? '/catalog/' : '/' + this.props.level.slice(-2) + '/catalog/'} onClick={(e) => {this.navi(e,'catalog' + this.props.level.slice(-3))}} className="header__link">Каталог</a>
                         <a href={this.props.level.slice(-2) === 'ru' ? '/about/' : '/' + this.props.level.slice(-2) + '/about/'} onClick={(e) => {this.navi(e, 'about' + this.props.level.slice(-3))}} className="header__link">О нас</a>
                         <a href={this.props.level.slice(-2) === 'ru' ? '/' : '/' + this.props.level.slice(-2) + '/'} onClick={(e) => {this.navi(e, 'home' + this.props.level.slice(-3))}} >
-                            <img className="header__logo-img" src="../../static/img/logo.svg" alt="sagtuft"/>
+                            <img className="header__logo-img" src="/static/img/logo.svg" alt="sagtuft"/>
                         </a>
                         <a href={this.props.level.slice(-2) === 'ru' ? '/vacancies/' : '/' + this.props.level.slice(-2) + '/vacancies/'} onClick={(e) => {this.navi(e, 'vacancies' + this.props.level.slice(-3))}} className="header__link">Вакансии</a>
                         <a href={this.props.level.slice(-2) === 'ru' ? '/contacts/' : '/' + this.props.level.slice(-2) + '/contacts/'} onClick={(e) => {this.navi(e, 'contacts' + this.props.level.slice(-3))}} className="header__link">Контакты</a>

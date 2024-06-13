@@ -32,7 +32,7 @@ class FooterClass extends Component {
         return (
             <footer className={this.props.main_content_show ? 'footer' : 'footer footer_hidden'}>
                 <div className="footer__col">
-                    <img className="footer__logo-img" src="../../static/img/logo.svg" alt="sagtuft"/>
+                    <img className="footer__logo-img" src="/static/img/logo.svg" alt="sagtuft"/>
                     <div className="footer__menu-block">
                         <p className="footer__menu-title">Ortimizdan yuring</p>
                         <div className="footer__links">
