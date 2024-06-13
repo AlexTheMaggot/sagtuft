@@ -22,6 +22,9 @@ import VacanciesUz from "../Vacancies/VacanciesUz";
 import Contacts from "../Contacts/Contacts";
 import ContactsEn from "../Contacts/ContactsEn";
 import ContactsUz from "../Contacts/ContactsUz";
+import CategoryDetail from "../CategoryDetail/CategoryDetail";
+import CategoryDetailEn from "../CategoryDetail/CategoryDetailEn";
+import CategoryDetailUz from "../CategoryDetail/CategoryDetailUz";
 
 export default function Main(props) {
     let params = useParams()
@@ -36,15 +39,19 @@ class MainClass extends Component {
             main_content_show: false,
             menu_nav: this.props.level,
             show_languages: false,
-            nav_id: '',
+            nav_slug_1: '',
+            nav_slug_2: '',
         }
 
     }
 
-    navi = (e, level, id = undefined) => {
+    navi = (e, level, slug_1 = undefined, slug_2 = undefined) => {
         e.preventDefault()
-        if (id !== undefined) {
-            this.setState({nav_id: id})
+        if (slug_1 !== undefined) {
+            this.setState({nav_slug_1: slug_1})
+        }
+        if (slug_2 !== undefined) {
+            this.setState({nav_slug_2: slug_2})
         }
         this.setState({menu_nav: level});
         this.setState({main_content_show: false});
@@ -98,6 +105,9 @@ class MainClass extends Component {
                     {this.state.navigate === 'catalog_ru' && <Navigate to='/catalog/'/>}
                     {this.state.navigate === 'catalog_en' && <Navigate to='/en/catalog/'/>}
                     {this.state.navigate === 'catalog_uz' && <Navigate to='/uz/catalog/'/>}
+                    {this.state.navigate === 'category_detail_ru' && <Navigate to={'/catalog/' + this.state.nav_slug_1 + '/'}/>}
+                    {this.state.navigate === 'category_detail_en' && <Navigate to={'/en/catalog/' + this.state.nav_slug_1 + '/'}/>}
+                    {this.state.navigate === 'category_detail_uz' && <Navigate to={'/uz/catalog/' + this.state.nav_slug_1 + '/'}/>}
                     {this.state.navigate === 'about_ru' && <Navigate to='/about/'/>}
                     {this.state.navigate === 'about_en' && <Navigate to='/en/about/'/>}
                     {this.state.navigate === 'about_uz' && <Navigate to='/uz/about/'/>}
@@ -113,6 +123,9 @@ class MainClass extends Component {
                     {this.props.level === 'catalog_ru' && <Catalog navi={this.navi} />}
                     {this.props.level === 'catalog_en' && <CatalogEn navi={this.navi} />}
                     {this.props.level === 'catalog_uz' && <CatalogUz navi={this.navi} />}
+                    {this.props.level === 'category_detail_ru' && <CategoryDetail category={this.state.nav_slug_1} navi={this.navi} />}
+                    {this.props.level === 'category_detail_en' && <CategoryDetailEn category={this.state.nav_slug_1} navi={this.navi} />}
+                    {this.props.level === 'category_detail_uz' && <CategoryDetailUz category={this.state.nav_slug_1} navi={this.navi} />}
                     {this.props.level === 'about_ru' && <About />}
                     {this.props.level === 'about_en' && <AboutEn />}
                     {this.props.level === 'about_uz' && <AboutUz />}
