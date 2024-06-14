@@ -2,6 +2,7 @@ from typing import Any
 from django.http import JsonResponse
 from .models import *
 
+
 ERRORS = {
     1002: 'WrongMethod',
 }
@@ -47,9 +48,14 @@ def category_list(request, request_data):
 def category_detail(request, request_data):
     category = Category.objects.get(id=request_data['params']['id'])
     response = {
+        'id': category.pk,
         'name_ru': category.name_ru,
         'name_en': category.name_en,
         'name_uz': category.name_uz,
+        'description_ru': category.description_ru,
+        'description_en': category.description_en,
+        'description_uz': category.description_uz,
+        'img': category.img.url,
+        'slug': category.slug,
     }
     return make_success(request_data['id'], response)
-
